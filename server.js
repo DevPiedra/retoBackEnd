@@ -25,7 +25,7 @@ app.get("/personas", function(req, res) {
 // http://localhost:3000/personas/ <----- el id
 app.get("/personas/:id", function(req,res){
     res.status(200).send({
-        mensaje: `El id buscado es ${req.params.id}`
+        mensaje: `El id buscando es ${req.params.id}`
     })
 })
 
