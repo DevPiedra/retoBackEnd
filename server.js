@@ -1,12 +1,11 @@
 // Importacion de Librerias
 const express = require("express")
-const bodyParser = require("body-parser")
 const request = require("request")
 // Instacion de una app de express
 const app = express()
 // Configuracion para poder recibir datos en el body
-app.use(bodyParser.urlencoded({extended: true}))
-app.use(bodyParser.json())
+app.use(express.urlencoded({extended: true}))
+app.use(express.json())
 
 // Crear nuestro primer endpoint
 app.get("/", function(req,res) {
